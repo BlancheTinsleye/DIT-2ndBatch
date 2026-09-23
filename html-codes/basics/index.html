@@ -4,39 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="" method="post">
-        <div id="INDEXrow1">
+    <div id="INDEXrow1">
+        <div id="INDEXrow1cardsCONT">
+            <!-- users' cards -->
+            <!-- <p class="INDEXrow1_cardH2">Hello</p> -->
             <div class="INDEXrow1_card">
-                <h2 class="INDEXrow1_cardH2">hello</h2>
+                <h2 class="INDEXrow1_cardH2">sample</h2>
             </div>
-        </div>
+            <div class="INDEXrow1_card">
+                <h2 class="INDEXrow1_cardH2">sample</h2>
+            </div>
+            <div class="INDEXrow1_card">
+                <h2 class="INDEXrow1_cardH2">sample</h2>
+            </div>
+            <div class="INDEXrow1_card">
+                <h2 class="INDEXrow1_cardH2">sample</h2>
+            </div>
+            <div class="INDEXrow1_card">
+                <h2 class="INDEXrow1_cardH2">sample</h2>
+            </div>
 
-    </form>
+        </div>
+    </div>
 </body>
 <script type="module">
     // console.log('This example is different!');
-    // import data from './data.json' with { type: 'json' };
-    // let all_users = data.users;
-    // let num_users = all_users.length;
+    import data from './data.json' with { type: 'json' };
+    let all_users = data.users;
+    let num_users = all_users.length;
     // console.log(data.users);
     // for (user = 0, )
     // console.log(all_users[0]);
+    const container = document.getElementById("INDEXrow1");
 
-    // for (let user = 0; user < num_users; user++) {
-        // let crrnt_user = all_users[user];
-        // console.log(crrnt_user["username"]);
+    for (let user = 0; user < num_users; user++) {
+        const crrnt_user = all_users[user];
+        console.log(crrnt_user["username"]);
+        console.log(crrnt_user["email"]);
+        
+        // const user = document.querySelector(".INDEXrow1_cardH2");
+        // user.innerText = crrnt_user;
+        // user.innerHTML = `<div class="INDEXrow1_card">
+        //         <h2 class="INDEXrow1_cardH2">no users...</h2>
+        //     </div>`;
+        // container.innerHTML += `<div class="INDEXrow1_card">
+        //         <h2 class="INDEXrow1_cardH2">${crrnt_user["username"]}</h2>
+        //     </div>`;
         // document.getElementById("INDEXrow1_cardH2").innerText = crrnt_user;
-    // };
+    };
 
     // document.getElementById("INDEXrow1_cardH2").innerText = all_users[0];
     // const user = document.getElementById("INDEXrow1_cardH2");
-    console.log(1)
-    const user = document.getElementsByClassName("INDEXrow1_cardH2");
+    // console.log(1)
+    // const user = document.querySelector(".INDEXrow1_cardH2");
     // const curren_text = user.innerText;
     // document.getElementById("username").innerText = user;
-    user.innerText = "ASKJHFAISKJBF";
+    // user.innerText = "ASKJHFAISKJBF";
 
     // console.log(curren_text);
     // user.innerText = all_users[0];

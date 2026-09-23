@@ -1,0 +1,48 @@
+body {
+    background-color: bisque;
+}
+
+body * {
+    margin: 0px;
+    padding: 0px;
+}
+
+#INDEXrow1 {
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: auto; */
+    /* justify-content: center; */
+
+    /* display: grid; */
+    /* grid-template-columns: 4fr; */
+}
+
+#INDEXrow1cardsCONT {
+    /* background-color: rgb(52, 73, 135); */
+    display: flex;
+
+    flex-wrap: wrap;
+    width: 1360px;
+}
+
+.INDEXrow1_card {
+    background-color: #f2d6b5;
+    height: 400px;
+    width: 300px;
+
+    margin: 10px;
+}
+
+.INDEXrow1_card {
+    /* flex: 1; */
+    display: flex;
+    padding: 10px;
+}
+
+.INDEXrow1_cardH2 {
+    font-family: 'Courier New';
+    font-weight: bolder;
+}
+
