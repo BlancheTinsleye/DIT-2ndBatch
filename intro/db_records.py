@@ -80,7 +80,7 @@ to_verify = [
 def check_customer_records(db_approved, id, name, email, city):
     for rcrd in db_approved:
         if rcrd["customer_id"] == id:
-            if email == rcrd["email_address"]:
+            if city == rcrd["city"]:
                 return True
             else:
                 return False
