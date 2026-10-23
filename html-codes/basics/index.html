@@ -11,7 +11,7 @@
         <div id="INDEXrow1cardsCONT">
             <!-- users' cards -->
             <!-- <p class="INDEXrow1_cardH2">Hello</p> -->
-            <div class="INDEXrow1_card">
+            <!-- <div class="INDEXrow1_card">
                 <h2 class="INDEXrow1_cardH2">sample</h2>
             </div>
             <div class="INDEXrow1_card">
@@ -25,7 +25,7 @@
             </div>
             <div class="INDEXrow1_card">
                 <h2 class="INDEXrow1_cardH2">sample</h2>
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -38,7 +38,7 @@
     // console.log(data.users);
     // for (user = 0, )
     // console.log(all_users[0]);
-    const container = document.getElementById("INDEXrow1");
+    const container = document.getElementById("INDEXrow1cardsCONT");
 
     for (let user = 0; user < num_users; user++) {
         const crrnt_user = all_users[user];
@@ -50,9 +50,9 @@
         // user.innerHTML = `<div class="INDEXrow1_card">
         //         <h2 class="INDEXrow1_cardH2">no users...</h2>
         //     </div>`;
-        // container.innerHTML += `<div class="INDEXrow1_card">
-        //         <h2 class="INDEXrow1_cardH2">${crrnt_user["username"]}</h2>
-        //     </div>`;
+        container.innerHTML += `<div class="INDEXrow1_card">
+                <h2 class="INDEXrow1_cardH2">${crrnt_user["username"]}</h2>
+            </div>`;
         // document.getElementById("INDEXrow1_cardH2").innerText = crrnt_user;
     };
 
